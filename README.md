@@ -1,3 +1,13 @@
+```sh
+git clone https://github.com/kritical0613/alpaca-8.13-contract.git
+```
+
+```sh
+yarn
+
+npx hardhat compile
+```
+
 
 ```sh
 npx hardhat deploy --network rinkeby --tags AutomatedVaultController
