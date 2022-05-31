@@ -1,0 +1,1569 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\AutomatedVaultController.sol": {
+      "lastModificationDate": 1654016873596,
+      "contentHash": "c83c2077788844706badbf63e24a0453",
+      "sourceName": "contracts/AutomatedVaultController.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./interfaces/ICreditor.sol",
+        "./interfaces/IDeltaNeutralVault.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "AutomatedVaultController"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol": {
+      "lastModificationDate": 1654017771438,
+      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\ICreditor.sol": {
+      "lastModificationDate": 1654016765354,
+      "contentHash": "4f61f3c0b052073d1ec8409b8c7fca7f",
+      "sourceName": "contracts/interfaces/ICreditor.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "ICreditor"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IDeltaNeutralVault.sol": {
+      "lastModificationDate": 1654016765354,
+      "contentHash": "10ab3e21bf05d5f818cfe1befc0fd7b5",
+      "sourceName": "contracts/interfaces/IDeltaNeutralVault.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IDeltaNeutralVault"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol": {
+      "lastModificationDate": 1654017771189,
+      "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1654017771415,
+      "contentHash": "be27cb63ce8e469db3306a210450385f",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol": {
+      "lastModificationDate": 1654017771176,
+      "contentHash": "b70d2e0552ab1f44f7e44b5f8379c358",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\xALPACACreditor.sol": {
+      "lastModificationDate": 1654016917684,
+      "contentHash": "6c9841fcf29cd319e599282eb06ebb39",
+      "sourceName": "contracts/xALPACACreditor.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./interfaces/IxALPACA.sol",
+        "./interfaces/ICreditor.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "xALPACACreditor"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IxALPACA.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "16196e335bd0b217211f3cd20af3dc73",
+      "sourceName": "contracts/interfaces/IxALPACA.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IxALPACA"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\xALPACAPriceSetter.sol": {
+      "lastModificationDate": 1654016918020,
+      "contentHash": "aca4d8e5452c57533a01e271b8ccf0a6",
+      "sourceName": "contracts/xALPACAPriceSetter.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./interfaces/IxALPACACreditor.sol",
+        "./interfaces/ITWAPOracle.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "xALPACAPriceSetter"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IxALPACACreditor.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "a86eee748a9a298e4cb909e535c5b93b",
+      "sourceName": "contracts/interfaces/IxALPACACreditor.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IxALPACACreditor"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\ITWAPOracle.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "2ed89994e143d7e5c705e24dd8459987",
+      "sourceName": "contracts/interfaces/ITWAPOracle.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "ITWAPOracle"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\DeltaNeutralVaultConfig02.sol": {
+      "lastModificationDate": 1654016915208,
+      "contentHash": "5ac3121ed292f6bf82b27b11dde9c36c",
+      "sourceName": "contracts/DeltaNeutralVaultConfig02.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "./interfaces/IDeltaNeutralVaultConfig02.sol",
+        "./interfaces/IController.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "DeltaNeutralVaultConfig02"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IDeltaNeutralVaultConfig02.sol": {
+      "lastModificationDate": 1654016765354,
+      "contentHash": "815c2ea7ec87ff0285cb4f183c0f62bc",
+      "sourceName": "contracts/interfaces/IDeltaNeutralVaultConfig02.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IDeltaNeutralVaultConfig02"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IController.sol": {
+      "lastModificationDate": 1654016765354,
+      "contentHash": "2f1e3b36df7b96587e52380a4a0d068c",
+      "sourceName": "contracts/interfaces/IController.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IController"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\DeltaNeutralVault02.sol": {
+      "lastModificationDate": 1654016911549,
+      "contentHash": "b8acaa585d6f52ee159547c8968afc98",
+      "sourceName": "contracts/DeltaNeutralVault02.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+        "./interfaces/IDeltaNeutralOracle.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IWorker02.sol",
+        "./interfaces/IWETH.sol",
+        "./interfaces/IWNativeRelayer.sol",
+        "./interfaces/IDeltaNeutralVaultConfig02.sol",
+        "./interfaces/IFairLaunch.sol",
+        "./interfaces/ISwapRouter.sol",
+        "./interfaces/IController.sol",
+        "./utils/SafeToken.sol",
+        "./utils/FixedPointMathLib.sol",
+        "./utils/Math.sol",
+        "./utils/FullMath.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "DeltaNeutralVault02"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol": {
+      "lastModificationDate": 1654017771446,
+      "contentHash": "c9cde6037fc8b1fe0ef04b79149ba733",
+      "sourceName": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol": {
+      "lastModificationDate": 1654017771262,
+      "contentHash": "2cd3679885f186b07f8bbbe3a88ef019",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol",
+        "./extensions/IERC20MetadataUpgradeable.sol",
+        "../../utils/ContextUpgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Upgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\IERC20Upgradeable.sol": {
+      "lastModificationDate": 1654017771367,
+      "contentHash": "a9ed3c7bc7d9ebb5e34f20829274f088",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\utils\\SafeERC20Upgradeable.sol": {
+      "lastModificationDate": 1654017771451,
+      "contentHash": "069940552da74793ab16791ffa99c013",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20Upgradeable.sol",
+        "../../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20Upgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IDeltaNeutralOracle.sol": {
+      "lastModificationDate": 1654016765354,
+      "contentHash": "5e7a64145f40c6eb9d7135bb203ad091",
+      "sourceName": "contracts/interfaces/IDeltaNeutralOracle.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IDeltaNeutralOracle"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IVault.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "f78b373d3c3981f89f0df929b0a9eea9",
+      "sourceName": "contracts/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IWorker02.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "ca704c2472f95663a388840ac19a6109",
+      "sourceName": "contracts/interfaces/IWorker02.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IWorker.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IWorker02"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IWETH.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "04df25556285feb3a41edbee94f31a6c",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IWNativeRelayer.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "8174af3d013bb025221928404ae49321",
+      "sourceName": "contracts/interfaces/IWNativeRelayer.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IWNativeRelayer"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IFairLaunch.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "ac031f0fd342b6c3f4e8ffa61931ee7b",
+      "sourceName": "contracts/interfaces/IFairLaunch.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IFairLaunch"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\ISwapRouter.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "7cb229424036f2acf178dc95b73ae1ce",
+      "sourceName": "contracts/interfaces/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\utils\\SafeToken.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "3971ee13f096b2791463275877294430",
+      "sourceName": "contracts/utils/SafeToken.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "ERC20Interface",
+        "SafeToken"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\utils\\FixedPointMathLib.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "4a75f788a1c200efd6da18c33c256a28",
+      "sourceName": "contracts/utils/FixedPointMathLib.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "FixedPointMathLib"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\utils\\Math.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "0ddffea9e2655cb245670d4060ad2248",
+      "sourceName": "contracts/utils/Math.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\utils\\FullMath.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "7f0a012006ede132a8586822be39a5b4",
+      "sourceName": "contracts/utils/FullMath.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\IERC20MetadataUpgradeable.sol": {
+      "lastModificationDate": 1654017771363,
+      "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20MetadataUpgradeable"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IWorker.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "962ac6ceaa359a90f90a5260a1be75a9",
+      "sourceName": "contracts/interfaces/IWorker.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPancakePair.sol"
+      ],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IWorker"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\interfaces\\IPancakePair.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "1d0831c44973551f887a378914ec9676",
+      "sourceName": "contracts/interfaces/IPancakePair.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "IPancakePair"
+      ]
+    },
+    "E:\\Workspaces\\Proteus\\alpaca-8.13-contract\\contracts\\utils\\AlpacaMath.sol": {
+      "lastModificationDate": 1654016765369,
+      "contentHash": "564cf19ffb2c85f553529dbfc55434e4",
+      "sourceName": "contracts/utils/AlpacaMath.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": true
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 800
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.13"
+      ],
+      "artifacts": [
+        "AlpacaMath"
+      ]
+    }
+  }
+}
